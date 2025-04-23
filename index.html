@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
     <script>
         tailwind.config = {
             theme: {
@@ -42,11 +47,11 @@
 
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-8 space-x-reverse">
-            <a href="#" class="text-white hover:text-[#1DCD9F] transition-colors duration-200">الرئيسية</a>
-            <a href="#" class="text-white hover:text-[#1DCD9F] transition-colors duration-200">الخدمات</a>
-            <a href="#" class="text-white hover:text-[#1DCD9F] transition-colors duration-200">أعمالنا</a>
-            <a href="#" class="text-white hover:text-[#1DCD9F] transition-colors duration-200">عنا</a>
-            <a href="#" class="text-white hover:text-[#1DCD9F] transition-colors duration-200">اتصل بنا</a>
+            <a href="#home" class="text-white hover:text-[#1DCD9F] transition-colors duration-200">الرئيسية</a>
+            <a href="#services" class="text-white hover:text-[#1DCD9F] transition-colors duration-200">الخدمات</a>
+            <a href="#portfolio" class="text-white hover:text-[#1DCD9F] transition-colors duration-200">أعمالنا</a>
+            <a href="#about" class="text-white hover:text-[#1DCD9F] transition-colors duration-200">عنا</a>
+            <a href="#callus" class="text-white hover:text-[#1DCD9F] transition-colors duration-200">اتصل بنا</a>
             <button class="bg-[#1DCD9F] hover:bg-[#169976] text-white px-6 py-2 rounded-lg transition-colors duration-200 ml-4">
                 احجز استشارة
             </button>
@@ -63,11 +68,11 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-[#222222] w-full absolute left-0 px-4 pb-4 shadow-lg">
         <div class="flex flex-col space-y-3 pt-2">
-            <a href="#" class="text-white hover:text-[#1DCD9F] transition-colors duration-200 py-2">الرئيسية</a>
-            <a href="#" class="text-white hover:text-[#1DCD9F] transition-colors duration-200 py-2">الخدمات</a>
-            <a href="#" class="text-white hover:text-[#1DCD9F] transition-colors duration-200 py-2">أعمالنا</a>
-            <a href="#" class="text-white hover:text-[#1DCD9F] transition-colors duration-200 py-2">عنا</a>
-            <a href="#" class="text-white hover:text-[#1DCD9F] transition-colors duration-200 py-2">اتصل بنا</a>
+            <a href="#home" class="text-white hover:text-[#1DCD9F] transition-colors duration-200 py-2">الرئيسية</a>
+            <a href="#services" class="text-white hover:text-[#1DCD9F] transition-colors duration-200 py-2">الخدمات</a>
+            <a href="#portfolio" class="text-white hover:text-[#1DCD9F] transition-colors duration-200 py-2">أعمالنا</a>
+            <a href="#about" class="text-white hover:text-[#1DCD9F] transition-colors duration-200 py-2">عنا</a>
+            <a href="#callus" class="text-white hover:text-[#1DCD9F] transition-colors duration-200 py-2">اتصل بنا</a>
             <button class="bg-[#1DCD9F] hover:bg-[#169976] text-white px-6 py-2 rounded-lg transition-colors duration-200 mt-2">
                 احجز استشارة
             </button>
@@ -78,7 +83,7 @@
 
 
    <!-- Hero Section -->
-<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<section class="relative h-screen flex items-center justify-center overflow-hidden" id="home">
     <!-- الخلفية (صورة + Overlay داكن) -->
     <div class="absolute inset-0">
         <img 
@@ -110,7 +115,7 @@
 
 
   <!-- Services Section -->
-<section class="py-20 bg-gray-50">
+<section class="py-20 bg-gray-50" id="services">
     <div class="container mx-auto px-6">
         <!-- العنوان والوصف -->
         <div class="text-center mb-16 animate__animated animate__fadeIn">
@@ -188,7 +193,7 @@
 
 
  <!-- Why Us Section -->
-<section class="py-20 bg-[#222222] text-white">
+<section class="py-20 bg-[#222222] text-white" id="about">
     <div class="container mx-auto px-6">
         <!-- العنوان والوصف -->
         <div class="text-center mb-16 animate__animated animate__fadeIn">
@@ -277,7 +282,7 @@
 
 
 <!-- Portfolio Section -->
-<section class="py-20 bg-white">
+<section class="py-20 bg-white" id="portfolio">
     <div class="container mx-auto px-4">
       <!-- العنوان والوصف -->
       <div class="text-center mb-16">
@@ -519,7 +524,7 @@
   </section>
 
    <!-- Contact Us Section -->
-<section class="py-20 bg-white">
+<section class="py-20 bg-white" id="callus">
     <div class="container mx-auto px-4">
       <!-- العنوان والوصف -->
       <div class="text-center mb-16">
